@@ -1,0 +1,5 @@
+name: "Animate a thing starter"
+identifier: "animate-a-thing-starter"
+type: 'html'
+build: true
+

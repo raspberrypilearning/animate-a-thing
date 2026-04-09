@@ -1,0 +1,4 @@
+name: "Animate a thing complete"
+identifier: "animate-a-thing-complete"
+type: 'html'
+build: true

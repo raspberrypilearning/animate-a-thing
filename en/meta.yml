@@ -1,7 +1,19 @@
-title: Project title in sentence case
+title: Animate a thing
 hero_image: images/banner.png
-description: A short description of the project
+description: Use a walk cycle to animate a cartoon rat
 listed: false
 pdf: false
+landing: true
 steps:
-  - title: What you will make
+  - title: Step 1
+  - title: Step 2
+    completion:
+    - engaged    
+  - title: Step 3
+  - title: Step 4
+  - title: Step 5
+  - title: Step 6
+    completion:
+    - external
+    - internal
+

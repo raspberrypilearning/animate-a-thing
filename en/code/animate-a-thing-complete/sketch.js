@@ -1,90 +1,64 @@
 const ratFrames = [];
 
-let x;
-let facing = 1; // 1 = right, -1 = left
+let ratX;
 let frameIndex = 0;
-let frameStep = 1;
+let facingLeft = false;
 
 const moveSpeed = 3;
 const animationDelay = 6;
-const spriteHeight = 96;
-const groundHeight = 90;
+const ratWidth = 80;
+const ratHeight = 80;
 
 function preload() {
-  for (let i = 0; i <= 5; i += 1) {
-    ratFrames.push(loadImage(`rat_${i}.png`));
+  for (let frameNumber = 0; frameNumber < 6; frameNumber += 1) {
+  ratFrames.push(loadImage(`rat_${frameNumber}.png`));
   }
 }
 
 function setup() {
-  const canvas = createCanvas(900, 420);
-  canvas.parent('sketch-holder');
-
+  createCanvas(900, 420);
   imageMode(CENTER);
   noSmooth();
-
-  x = width / 2;
+  ratX = width / 2;
 }
 
 function draw() {
-  drawBackground();
+  background(180, 220, 255);
 
-  let moving = false;
+  let isMoving = false;
 
-  if (keyIsDown(LEFT_ARROW) && !keyIsDown(RIGHT_ARROW)) {
-    x -= moveSpeed;
-    facing = -1;
-    moving = true;
-  } else if (keyIsDown(RIGHT_ARROW) && !keyIsDown(LEFT_ARROW)) {
-    x += moveSpeed;
-    facing = 1;
-    moving = true;
+  if (keyIsDown(LEFT_ARROW)) {
+    ratX -= moveSpeed;
+    facingLeft = true;
+    isMoving = true;
+  }
+  if (keyIsDown(RIGHT_ARROW)) {
+    ratX += moveSpeed;
+    facingLeft = false;
+    isMoving = true;
   }
 
-  const currentFrame = ratFrames[frameIndex];
-  const drawH = spriteHeight;
-  const drawW = (currentFrame.width / currentFrame.height) * drawH;
-  const halfW = drawW / 2;
-  const y = height - groundHeight - drawH / 2;
-
-  x = constrain(x, halfW, width - halfW);
-
-  if (moving && frameCount % animationDelay === 0) {
+  if (isMoving && frameCount % animationDelay === 0) {
     advanceWalkCycle();
   }
 
-  drawRat(currentFrame, drawW, drawH, y);
+  let ratY = height - ratHeight / 2 - 20;
+  drawRat(ratX, ratY);
 }
 
-function advanceWalkCycle() {
-  frameIndex += frameStep;
-
-  if (frameIndex >= ratFrames.length - 1 || frameIndex <= 0) {
-    frameStep *= -1;
-  }
-}
-
-function drawRat(frameImage, drawW, drawH, y) {
+function drawRat(x, y) {
   push();
   translate(x, y);
-
-  if (facing === -1) {
+  if (facingLeft) {
     scale(-1, 1);
   }
-
-  image(frameImage, 0, 0, drawW, drawH);
+  image(ratFrames[frameIndex], 0, 0, ratWidth, ratHeight);
   pop();
 }
 
-function drawBackground() {
-  background(27, 32, 44);
-
-  noStroke();
-  fill(40, 48, 66);
-  rect(0, height - groundHeight, width, groundHeight);
-
-  fill(58, 68, 92);
-  for (let i = 0; i < width; i += 70) {
-    rect(i, height - groundHeight, 40, groundHeight);
+function advanceWalkCycle() {
+  frameIndex += 1;
+  if (frameIndex >= ratFrames.length) {
+    frameIndex = 0;
   }
 }

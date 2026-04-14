@@ -1,0 +1,4 @@
+name: "Draw a Cat"
+identifier: "draw-a-cat"
+type: 'html'
+build: true

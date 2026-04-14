@@ -1,0 +1,28 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+}
+
+main {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 24px;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+#status {
+  margin: 0 0 16px;
+}
+
+canvas {
+  display: block;
+  border: 1px solid #ccc;
+  background: white;
+}

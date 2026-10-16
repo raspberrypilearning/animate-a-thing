@@ -2,8 +2,6 @@
 
 In this section, you will use the `facingLeft` variable to remember which way the rat is moving. Then you will flip the rat image so it looks left when it walks left.
 
-### Step 1
-
 First, update the movement code in `draw()` so the sketch remembers the rat's direction.
 
 --- code ---
@@ -30,8 +28,6 @@ function draw() {
   drawRat(ratX, ratY);
 }
 --- /code ---
-
-### Step 2
 
 Now replace `drawRat()` with this new version. It uses `translate(x, y)` to move the drawing point, so the image must be drawn at `0, 0`.
 

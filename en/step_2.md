@@ -2,8 +2,6 @@
 
 In this section, you will load the rat pictures and draw the rat on the canvas. You will start by loading the animation frames, then draw one frame, and finally choose where the rat should stand.
 
-### Step 1
-
 Add this code to `preload()` to load all six rat images before the sketch starts.
 
 --- code ---
@@ -21,8 +19,6 @@ function preload() {
 }
 --- /code ---
 
-### Step 2
-
 Now add this line to `drawRat(x, y)` to draw the first rat image.
 
 --- code ---
@@ -37,8 +33,6 @@ function drawRat(x, y) {
   image(ratFrames[0], x, y, ratWidth, ratHeight);
 }
 --- /code ---
-
-### Step 3
 
 Finally, go back to `draw()` and choose a `y` position for the rat. Then call `drawRat()` to show it on the screen.
 

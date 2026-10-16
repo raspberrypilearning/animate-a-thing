@@ -2,6 +2,8 @@
 
 Right now, the rat keeps walking all the time. In this section, you will make the rat animate only when the player presses an arrow key.
 
+### Step 1
+
 Start by adding a new variable called `isMoving` inside `draw()`. Set it to `true` when the left or right arrow key is pressed.
 
 --- code ---
@@ -36,6 +38,8 @@ function draw() {
   drawRat(ratX, ratY);
 }
 --- /code ---
+
+### Step 2
 
 Now update the animation code so `advanceWalkCycle()` only runs when `isMoving` is `true`.
 

@@ -2,6 +2,8 @@
 
 In this section, you will use the keyboard to move the rat left and right. You will add the code inside `draw()` so the sketch can check the arrow keys again and again.
 
+### Step 1
+
 Add two `if` statements inside `draw()`. One checks whether the left arrow key is pressed, and the other checks for the right arrow key.
 
 --- code ---

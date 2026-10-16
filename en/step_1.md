@@ -2,6 +2,8 @@
 
 In this section, you will get your sketch ready to use. You will create the canvas where your game will appear, and then add a background colour so you can check that everything is working.
 
+### Step 1
+
 Start by setting up the canvas in `setup()`. This makes a space for your sketch, tells p5.js to draw images from their centre, and puts the rat in the middle of the screen.
 
 --- code ---
@@ -19,6 +21,8 @@ function setup() {
   ratX = width / 2;
 }
 --- /code ---
+
+### Step 2
 
 Now add a background colour inside `draw()`. This will paint the canvas every frame.
 

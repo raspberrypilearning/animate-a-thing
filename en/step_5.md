@@ -2,6 +2,8 @@
 
 In this section, you will use the rat animation frames you loaded earlier. You will draw the current frame, update the frame number, and then slow the animation down so the rat does not move too fast.
 
+### Step 1
+
 First, change `drawRat()` so it draws the current frame number instead of always drawing the first picture.
 
 --- code ---
@@ -23,6 +25,8 @@ function drawRat(x, y) {
 }
 --- /code ---
 
+### Step 2
+
 Now add code to `advanceWalkCycle()` to move to the next frame. If the frame number gets too big, set it back to `0`.
 
 --- code ---
@@ -40,6 +44,8 @@ function advanceWalkCycle() {
   }
 }
 --- /code ---
+
+### Step 3
 
 Finally, call `advanceWalkCycle()` inside `draw()`. Use `animationDelay` to slow the animation down.
 

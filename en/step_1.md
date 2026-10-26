@@ -1,10 +1,10 @@
 ## Set up your sketch
 
-In this section, you will get your sketch ready to use. You will create the canvas where your game will appear, and then add a background colour so you can check that everything is working.
+In this section, you will get your sketch ready to use. You will create the canvas where your game will appear, then add a background colour.
 
 ### Step 1
 
-Start by setting up the canvas in `setup()`. This makes a space for your sketch, tells p5.js to draw images from their centre, and puts the rat in the middle of the screen.
+Start by setting up the canvas in `setup()`. This makes a space for your sketch, tells p5.js to draw images from their centre, and will put the rat in the middle of the screen when you add it later.
 
 --- code ---
 ---
@@ -47,10 +47,10 @@ Your sketch should show a light blue rectangle.
 
 ### Tip
 {: .c-project-callout .c-project-callout--tip}
-- Try changing the three numbers in `background(180, 220, 255)` to make a different colour.
-- Change `createCanvas(900, 420)` to make your sketch wider or taller.
+- Try changing the three numbers in `background(180, 220, 255)` to make a different colour
+- Change `createCanvas(900, 420)` to make your sketch wider or taller
 
 ### Debugging
 {: .c-project-callout .c-project-callout--debug}
-- Make sure `createCanvas(...)` is inside `setup()`, not inside `draw()`.
-- `CENTER` must be written in capital letters.
+- Make sure `createCanvas(...)` is inside `setup()`, not inside `draw()`
+- `CENTER` must be written in capital letters

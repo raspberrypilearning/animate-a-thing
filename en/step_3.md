@@ -35,11 +35,11 @@ Press the left and right arrow keys. The rat should move across the screen.
 
 ### Tip
 {: .c-project-callout .c-project-callout--tip}
-- Change `moveSpeed` at the top of your code to make the rat move faster or slower.
-- Try a very small number like `1`, then a bigger number like `10`, and compare what happens.
+- Change `moveSpeed` at the top of your code to make the rat move faster or slower
+- Try a very small number like `1`, then a bigger number like `10`, and compare what happens
 
 ### Debugging
 {: .c-project-callout .c-project-callout--debug}
-- Make sure the movement code is inside `draw()`, not inside `setup()`.
-- Check that you typed `LEFT_ARROW` and `RIGHT_ARROW` exactly, with capital letters.
-- If the rat is not moving, make sure you changed `ratX` and not `ratY`.
+- Make sure the movement code is inside `draw()`, not inside `setup()`
+- Check that you typed `LEFT_ARROW` and `RIGHT_ARROW` exactly, with capital letters
+- If the rat is not moving, make sure you changed `ratX` and not `ratY`

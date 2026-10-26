@@ -1,10 +1,10 @@
 ## Make the rat face the right way
 
-In this section, you will use the `facingLeft` variable to remember which way the rat is moving. Then you will flip the rat image so it looks left when it walks left.
+In this section, you will use the `facingLeft` variable to register which way the rat is moving. You will then make the rat image flip so it looks left when it walks left, and right when it walks right.
 
 ### Step 1
 
-First, update the movement code in `draw()` so the sketch remembers the rat's direction.
+First, update the movement code in `draw()` so the sketch registers the rat's direction.
 
 --- code ---
 ---
@@ -62,11 +62,11 @@ Press the left and right arrow keys. The rat should turn to face the direction i
 
 ### Tip
 {: .c-project-callout .c-project-callout--tip}
-- `translate(x, y)` moves the drawing point before the image is drawn.
-- After using `translate(x, y)`, draw the image at `0, 0`.
+- `translate(x, y)` moves the drawing point before the image is drawn
+- After using `translate(x, y)`, draw the image at `0, 0`
 
 ### Debugging
 {: .c-project-callout .c-project-callout--debug}
-- Make sure you changed the `image(...)` line to use `0, 0`, not `x, y`.
-- Check that `push()` and `pop()` are both included.
-- If the rat disappears, check that `scale(-1, 1)` is inside the `if (facingLeft)` block.
+- Make sure you changed the `image(...)` line to use `0, 0`, not `x, y`
+- Check that `push()` and `pop()` are both included
+- If the rat disappears, check that `scale(-1, 1)` is inside the `if (facingLeft)` block

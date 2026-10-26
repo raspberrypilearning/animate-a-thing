@@ -66,11 +66,11 @@ Your sketch should show the rat standing near the bottom of the blue canvas.
 
 ### Tip
 {: .c-project-callout .c-project-callout--tip}
-- Change `-20` to a different number to move the rat up or down.
-- Try changing `ratWidth` and `ratHeight` at the top of your code to make the rat bigger or smaller.
+- Change `-20` to a different number to move the rat up or down
+- Try changing `ratWidth` and `ratHeight` at the top of your code to make the rat bigger or smaller
 
 ### Debugging
 {: .c-project-callout .c-project-callout--debug}
-- Check that your image files are called `rat_0.png` to `rat_5.png`.
-- Make sure you used backticks in `` `rat_${frameNumber}.png` ``.
-- Check that `drawRat(ratX, ratY);` is inside `draw()`.
+- Check that your image files are called `rat_0.png` to `rat_5.png`
+- Make sure you used backticks in `` `rat_${frameNumber}.png` ``
+- Check that `drawRat(ratX, ratY);` is inside `draw()`

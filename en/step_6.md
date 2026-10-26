@@ -1,6 +1,6 @@
 ## Only animate the rat when it moves
 
-Right now, the rat keeps walking all the time. In this section, you will make the rat animate only when the player presses an arrow key.
+At the moment, the rat keeps walking all the time. In this section, you will make the rat animate only when the player presses an arrow key.
 
 ### Step 1
 
@@ -84,11 +84,11 @@ Press the left and right arrow keys to move the rat. When you stop pressing the 
 
 ### Tip
 {: .c-project-callout .c-project-callout--tip}
-- `isMoving` starts as `false` every time `draw()` runs.
-- It only changes to `true` when one of the arrow keys is pressed.
+- `isMoving` starts as `false` every time `draw()` runs
+- It only changes to `true` when one of the arrow keys is pressed
 
 ### Debugging
 {: .c-project-callout .c-project-callout--debug}
-- Make sure `let isMoving = false;` is inside `draw()`.
-- Check that both movement `if` statements include `isMoving = true;`.
-- Make sure you changed the animation `if` statement to use `isMoving &&`.
+- Make sure `let isMoving = false;` is inside `draw()`
+- Check that both movement `if` statements include `isMoving = true;`
+- Make sure you changed the animation `if` statement to use `isMoving &&`
